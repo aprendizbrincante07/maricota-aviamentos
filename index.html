@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maricota Aviamentos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- CABEÇALHO: logo, nome da loja e navegação -->
+  <header>
+    <h1>Maricota Aviamentos</h1>
+    <nav>
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#produtos">Produtos</a></li>
+        <li><a href="#contato">Contato</a></li>
+        <li><a href="carrinho.html">Carrinho (<span id="contador-carrinho">0</span>)</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- CONTEÚDO PRINCIPAL da página -->
+  <main>
+
+    <!-- Seção de destaque, a primeira coisa que a pessoa vê -->
+    <section id="hero">
+      <h2>O detalhe que transforma.</h2>
+      <p>Na Maricota Aviamentos, você encontra lãs de qualidade para dar vida aos seus projetos de tricô, crochê e artesanatos.
+        Aqui, cada cliente é recebido com atenção, carinho e um atendimento especial, porque acreditamos que todo trabalho à mão começa com a escolha certa
+      </p>
+    </section>
+
+    <!-- Seção onde os produtos vão aparecer, organizados por marca -->
+    <section id="produtos">
+      <h2>Produtos</h2>
+
+      <!-- Menu rápido para pular direto para uma categoria -->
+      <nav class="submenu-produtos">
+        <a href="#circulo">Círculo</a>
+        <a href="#pinguim">Pinguim</a>
+        <a href="#mollet">Mollet</a>
+        <a href="#amigurumi">Amigurumi</a>
+        <a href="#anne">Anne</a>
+        <a href="#cleia">Cléia</a>
+        <a href="#kits-amigurumi">Kits Amigurumi</a>
+      </nav>
+    </section>
+
+    <section id="circulo" class="categoria-produtos">
+      <h3>Círculo</h3>
+      <div class="lista-produtos">
+
+        <article class="produto" data-estoque="5">
+          <img src="imagens/crush.jpg.png" alt="Crush">
+          <h3>Crush | 150g | 300m</h3>
+          <p class="preco">R$ 37,90</p>
+          <p class="estoque"></p>
+          <button onclick="adicionarAoCarrinho('Crush', 37.90)">Adicionar ao carrinho</button>
+        </article>
+        <article class="produto" data-estoque="5">
+          <img src="imagens/confete-baby,jpg.jpg" alt="Confete Baby">
+          <h3>confete-baby | 100g | 165m</h3>
+          <p class="preco">R$ 26,90</p>
+          <p class="estoque"></p>
+          <button onclick="adicionarAoCarrinho('Confete Baby', 26.90)">Adicionar ao carrinho</button>
+        </article>
+        <article class="produto" data-estoque="5">
+          <img src="imagens/candy-baby.jpg.png" alt="Candy Baby">
+          <h3>candy-baby | 100g | 300m</h3>
+          <p class="preco">R$ 19,90</p>
+          <p class="estoque"></p>
+          <button onclick="adicionarAoCarrinho('Candy Baby', 19.90)">Adicionar ao carrinho</button>
+        </article>
+        <article class="produto" data-estoque="5">
+          <img src="imagens/puffy.jpg" alt="Puffy">
+          <h3>Puffy | 200g | 28m</h3>
+          <p class="preco">R$ 37,90</p>
+          <p class="estoque"></p>
+          <button onclick="adicionarAoCarrinho('Puffy', 37.90)">Adicionar ao carrinho</button>
+        </article>
+        <article class="produto" data-estoque="5">
+          <img src="imagens/classic-pull.jpg" alt="Classic Pull">
+          <h3>Classic-Pull | 200g | 330m</h3>
+          <p class="preco">R$ 48,90</p>
+          <p class="estoque"></p>
+          <button onclick="adicionarAoCarrinho('Classic Pull', 48.90)">Adicionar ao carrinho</button>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="pinguim" class="categoria-produtos">
+      <h3>Pinguim</h3>
+      <div class="lista-produtos">
+        <p class="em-breve">Produtos chegando em breve.</p>
+      </div>
+    </section>
+
+    <section id="mollet" class="categoria-produtos">
+      <h3>Mollet</h3>
+      <div class="lista-produtos">
+        <p class="em-breve">Produtos chegando em breve.</p>
+      </div>
+    </section>
+
+    <section id="amigurumi" class="categoria-produtos">
+      <h3>Amigurumi</h3>
+      <div class="lista-produtos">
+        <p class="em-breve">Produtos chegando em breve.</p>
+      </div>
+    </section>
+
+    <section id="anne" class="categoria-produtos">
+      <h3>Anne</h3>
+      <div class="lista-produtos">
+        <p class="em-breve">Produtos chegando em breve.</p>
+      </div>
+    </section>
+
+    <section id="cleia" class="categoria-produtos">
+      <h3>Cléia</h3>
+      <div class="lista-produtos">
+        <p class="em-breve">Produtos chegando em breve.</p>
+      </div>
+    </section>
+
+    <section id="kits-amigurumi" class="categoria-produtos">
+      <h3>Kits Amigurumi</h3>
+      <div class="lista-produtos">
+        <article class="produto">
+          <a href="colecao-bicho-bola.html" class="link-produto">
+            <img src="imagens/kit-amigurumi-col.bicho-bola2.jpg.webp" alt="Kit Amigurumi Coleção Bicho Bola 2">
+            <h3>Kit Amigurumi | Coleção Bicho Bola 2</h3>
+          </a>
+          <p class="preco">A partir de R$ 40,00</p>
+          <p class="estoque">Em estoque: 25 unidades</p>
+          <a href="colecao-bicho-bola.html" class="botao-ver-opcoes">Ver opções</a>
+        </article>
+        <article class="produto">
+          <a href="colecao-dinos.html" class="link-produto">
+            <img src="imagens/kit-amigurumi-col-dinos.jpg.webp" alt="Kit Amigurumi Coleção Dinos">
+            <h3>Kit Amigurumi | Coleção Dinos</h3>
+          </a>
+          <p class="preco">A partir de R$ 40,00</p>
+          <p class="estoque">Em estoque: 20 unidades</p>
+          <a href="colecao-dinos.html" class="botao-ver-opcoes">Ver opções</a>
+        </article>
+        <article class="produto">
+          <a href="colecao-hello-kitty.html" class="link-produto">
+            <img src="imagens/kit-amigurumi-col.hello-kitty.jpg.webp" alt="Kit Amigurumi Coleção Hello Kitty">
+            <h3>Kit Amigurumi | Coleção Hello Kitty</h3>
+          </a>
+          <p class="preco">A partir de R$ 40,00</p>
+          <p class="estoque">Em estoque: 15 unidades</p>
+          <a href="colecao-hello-kitty.html" class="botao-ver-opcoes">Ver opções</a>
+        </article>
+        <article class="produto">
+          <a href="colecao-hello-kitty-caixas.html" class="link-produto">
+            <img src="imagens/kit-amigurumi-col.hello-kitty-caixas.jpg.jfif" alt="Kit Amigurumi Coleção Hello Kitty 2">
+            <h3>Kit Amigurumi | Coleção Hello Kitty 2</h3>
+          </a>
+          <p class="preco">A partir de R$ 40,00</p>
+          <p class="estoque">Em estoque: 50 unidades</p>
+          <a href="colecao-hello-kitty-caixas.html" class="botao-ver-opcoes">Ver opções</a>
+        </article>
+        <article class="produto">
+          <a href="colecao-peanuts.html" class="link-produto">
+            <img src="imagens/kit-amigurumi-snoopy-and-peanuts-1.jpg.webp" alt="Kit Amigurumi Coleção Peanuts">
+            <h3>Kit Amigurumi | Coleção Peanuts</h3>
+          </a>
+          <p class="preco">A partir de R$ 40,00</p>
+          <p class="estoque">Em estoque: 40 unidades</p>
+          <a href="colecao-peanuts.html" class="botao-ver-opcoes">Ver opções</a>
+        </article>
+        <article class="produto">
+          <a href="colecao-turma-da-monica.html" class="link-produto">
+            <img src="imagens/kit-amigurumi-col-t-monica.jpg.webp" alt="Kit Amigurumi Coleção Turma da Monica">
+            <h3>Kit Amigurumi | Coleção Turma da Mônica</h3>
+          </a>
+          <p class="preco">A partir de R$ 40,00</p>
+          <p class="estoque">Em estoque: 25 unidades</p>
+          <a href="colecao-turma-da-monica.html" class="botao-ver-opcoes">Ver opções</a>
+        </article>
+        <article class="produto">
+          <a href="colecao-ursinhos.html" class="link-produto">
+            <img src="imagens/kit_amigurumi_ursinhos_circulo_1_20260423163351_66309b3f87e2.jpg.webp" alt="Kit Amigurumi Coleção Ursinhos">
+            <h3>Kit Amigurumi | Coleção Ursinhos</h3>
+          </a>
+          <p class="preco">A partir de R$ 40,00</p>
+          <p class="estoque">Em estoque: 25 unidades</p>
+          <a href="colecao-ursinhos.html" class="botao-ver-opcoes">Ver opções</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Seção sobre a loja/pessoa por trás dela -->
+    <section id="sobre">
+      <h2>Sobre</h2>
+      <p>A Maricota Aviamentos existe há 2 anos, criada pela Mari com o objetivo de oferecer tudo que quem trabalha com artesanato precisa: linhas, agulhas, tecidos e aviamentos de qualidade.</p>
+      <p>Além da loja física, também oferecemos aulas de crochê e tricô, para crianças e adultos que querem aprender ou aperfeiçoar essas técnicas. Estamos localizados na Rua Fulvio Aducci, 1074, loja 27 (ao lado do Sacolão do Estreito), sempre prontos para ajudar você a encontrar o material certo para o seu projeto.</p>
+    </section>
+
+    <section id="contato">
+      <h2>Contato</h2>
+      <div class="lista-contato">
+        <a href="mailto:aviamentosmaricota@gmail.com" class="link-contato">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+            <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/>
+          </svg>
+          Email: aviamentosmaricota@gmail.com
+        </a>
+        <a href="https://wa.me/5548999016147" target="_blank" class="link-contato">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+            <path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.38 5.08L2 22l5.05-1.33C8.5 21.5 10.2 22 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm5.2 14.2c-.22.62-1.28 1.16-1.76 1.2-.45.05-1 .07-1.6-.1-.37-.1-.84-.27-1.44-.53-2.54-1.1-4.2-3.66-4.33-3.83-.13-.17-1.04-1.38-1.04-2.63s.66-1.87.9-2.13c.23-.25.5-.32.67-.32.17 0 .33 0 .48.01.15.01.36-.06.56.43.22.53.75 1.83.82 1.96.06.13.1.29.02.46-.08.17-.13.28-.25.43-.13.15-.27.34-.38.46-.13.13-.26.27-.11.53.15.27.68 1.12 1.46 1.82 1 .9 1.85 1.18 2.11 1.31.27.13.42.11.58-.07.16-.18.68-.79.86-1.06.18-.27.36-.22.6-.13.25.09 1.56.74 1.83.87.27.13.45.2.51.31.07.12.07.68-.15 1.3z"/>
+          </svg>
+          WhatsApp: (48) 99901-6147
+        </a>
+        <a href="https://instagram.com/aviamentosmaricota" target="_blank" class="link-contato">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+            <path d="M12 2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.256 1.216.6 1.772 1.153.5.5.888 1.11 1.153 1.772.247.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122 0 2.717-.01 3.056-.06 4.122-.05 1.065-.218 1.79-.465 2.428a4.883 4.883 0 0 1-1.153 1.772 4.915 4.915 0 0 1-1.772 1.153c-.637.247-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06-2.717 0-3.056-.01-4.122-.06-1.065-.05-1.79-.218-2.428-.465a4.89 4.89 0 0 1-1.772-1.153 4.904 4.904 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12c0-2.717.01-3.056.06-4.122.05-1.066.217-1.79.465-2.428a4.88 4.88 0 0 1 1.153-1.772A4.897 4.897 0 0 1 5.45 2.525c.638-.248 1.362-.415 2.428-.465C8.944 2.013 9.283 2 12 2zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8.25a3.25 3.25 0 1 1 0-6.5 3.25 3.25 0 0 1 0 6.5zM17.5 6.75a1.15 1.15 0 1 1-2.3 0 1.15 1.15 0 0 1 2.3 0z"/>
+          </svg>
+          Instagram: @aviamentosmaricota
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- RODAPÉ: informações de contato, redes sociais, etc. -->
+  <footer>
+    
+  </footer>
+
+  <a href="https://wa.me/5548999016147?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20produtos." target="_blank" class="botao-whatsapp" aria-label="Fale conosco no WhatsApp">
+    <svg viewBox="0 0 24 24" width="28" height="28" fill="white">
+      <path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.38 5.08L2 22l5.05-1.33C8.5 21.5 10.2 22 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm5.2 14.2c-.22.62-1.28 1.16-1.76 1.2-.45.05-1 .07-1.6-.1-.37-.1-.84-.27-1.44-.53-2.54-1.1-4.2-3.66-4.33-3.83-.13-.17-1.04-1.38-1.04-2.63s.66-1.87.9-2.13c.23-.25.5-.32.67-.32.17 0 .33 0 .48.01.15.01.36-.06.56.43.22.53.75 1.83.82 1.96.06.13.1.29.02.46-.08.17-.13.28-.25.43-.13.15-.27.34-.38.46-.13.13-.26.27-.11.53.15.27.68 1.12 1.46 1.82 1 .9 1.85 1.18 2.11 1.31.27.13.42.11.58-.07.16-.18.68-.79.86-1.06.18-.27.36-.22.6-.13.25.09 1.56.74 1.83.87.27.13.45.2.51.31.07.12.07.68-.15 1.3z"/>
+    </svg>
+  </a>
+
+  <script src="carrinho.js"></script>
+</body>
+</html>

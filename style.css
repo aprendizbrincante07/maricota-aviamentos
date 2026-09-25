@@ -1,0 +1,168 @@
+/* Isso é um comentário em CSS — o navegador ignora tudo entre /* e *e/ */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+header {
+  background-color: #ff47d1;
+  color: #222222;
+  padding: 20px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+}
+
+nav a {
+  color: #222222;
+  text-decoration: none;
+}
+
+.lista-produtos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.produto {
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+  max-width: 300px;
+}
+
+.produto img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.preco {
+  font-weight: bold;
+  color: #2a7a2a;
+}
+
+#carrinho-conteudo {
+  padding: 20px;
+  max-width: 500px;
+}
+
+.item-carrinho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.item-carrinho button {
+  background-color: #ffffff;
+  border: 1px solid #cc3333;
+  color: #cc3333;
+  border-radius: 4px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.item-carrinho button:hover {
+  background-color: #cc3333;
+  color: #ffffff;
+}
+
+#total-carrinho {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-top: 16px;
+}
+
+h1 {
+  font-family: "Great Vibes", cursive;
+  font-size: 3em;
+  margin: 0;
+}
+
+nav a {
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+}
+
+.botao-whatsapp {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background-color: #25D366;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+
+.botao-whatsapp:hover {
+  transform: scale(1.08);
+}
+
+.link-contato {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--cor-destaque);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.link-produto {
+  text-decoration: none;
+  color: inherit;
+}
+
+.botao-ver-opcoes {
+  display: inline-block;
+  background-color: var(--cor-destaque);
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.submenu-produtos {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+
+.submenu-produtos a {
+  color: #ff47d1;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+main section {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.estoque {
+  font-size: 0.9em;
+  color: #666666;
+  margin: 4px 0;
+}
+
+button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
