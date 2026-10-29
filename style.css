@@ -170,3 +170,15 @@ button:disabled {
   background-color: #cccccc;
   cursor: not-allowed;
 }
+
+.foto-carrinho {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.nome-carrinho {
+  flex: 1;
+  margin: 0 12px;
+}

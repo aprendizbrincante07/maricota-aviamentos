@@ -9,7 +9,9 @@ function salvarCarrinho(carrinho) {
 
 function adicionarAoCarrinho(nome, preco) {
   const carrinho = getCarrinho();
-  carrinho.push({ nome: nome, preco: preco });
+  const card = event.target.closest('.produto');
+  const imagem = card ? card.querySelector('img').getAttribute('src') : '';
+  carrinho.push({ nome: nome, preco: preco, imagem: imagem });
   salvarCarrinho(carrinho);
   atualizarContadorCarrinho();
   alert(nome + " foi adicionado ao carrinho!");

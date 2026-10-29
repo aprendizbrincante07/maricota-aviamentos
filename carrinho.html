@@ -52,9 +52,13 @@
       let total = 0;
 
       carrinho.forEach(function (item, indice) {
+  const foto = item.imagem
+    ? "<img src='" + item.imagem + "' alt='" + item.nome + "' class='foto-carrinho'>"
+    : "";
   html += "<div class='item-carrinho'>" +
-            item.nome + " - R$ " + item.preco.toFixed(2) +
-            " <button onclick='removerDoCarrinho(" + indice + "); mostrarCarrinho();'>Remover</button>" +
+            foto +
+            "<span class='nome-carrinho'>" + item.nome + " - R$ " + item.preco.toFixed(2) + "</span>" +
+            "<button onclick='removerDoCarrinho(" + indice + "); mostrarCarrinho();'>Remover</button>" +
           "</div>";
   total += item.preco;
 });
