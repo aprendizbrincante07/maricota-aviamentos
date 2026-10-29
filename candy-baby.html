@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Candy Baby - Maricota Aviamentos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Maricota Aviamentos</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html#sobre">Sobre</a></li>
+        <li><a href="index.html#produtos">Produtos</a></li>
+        <li><a href="index.html#contato">Contato</a></li>
+        <li><a href="carrinho.html">Carrinho (<span id="contador-carrinho">0</span>)</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="produto-detalhe">
+      <div class="galeria">
+        <img src="imagens/candy-baby.jpg.png" alt="Candy Baby">
+      </div>
+
+      <div class="info-produto">
+        <h2>Candy Baby</h2>
+        <p class="especificacoes">Círculo | 100g | 300m</p>
+        <p class="preco">R$ 19,90</p>
+        <p class="descricao">Candy Baby é um fio acrílico leve, de alto rendimento e toque suave, ideal para criar roupas e acessórios infantis, como mantas e sapatinhos. Sua fibra turca de excelente qualidade proporciona peças confortáveis e com ótimo caimento. A cartela reúne 16 cores delicadas, especialmente escolhidas para o universo infantil.</p>
+      </div>
+    </section>
+
+    <section class="categoria-produtos">
+      <h3>Cores disponíveis</h3>
+      <div class="lista-produtos">
+
+        <article class="produto" data-estoque="5">
+          <img src="imagens/candy-baby.jpg.png" alt="Candy Baby 10 Branco">
+          <h3>10 - Branco</h3>
+          <p class="preco">R$ 19,90</p>
+          <p class="estoque"></p>
+          <button onclick="adicionarAoCarrinho('Candy Baby - 10 Branco', 19.90)">Adicionar ao carrinho</button>
+        </article>
+
+        <article class="produto" data-estoque="5">
+          <img src="imagens/candy-baby.jpg.png" alt="Candy Baby 1074 Creme">
+          <h3>1074 - Creme</h3>
+          <p class="preco">R$ 19,90</p>
+          <p class="estoque"></p>
+          <button onclick="adicionarAoCarrinho('Candy Baby - 1074 Creme', 19.90)">Adicionar ao carrinho</button>
+        </article>
+
+        <article class="produto" data-estoque="5">
+          <img src="imagens/candy-baby.jpg.png" alt="Candy Baby 1011 Amarelinho">
+          <h3>1011 - Amarelinho</h3>
+          <p class="preco">R$ 19,90</p>
+          <p class="estoque"></p>
+          <button onclick="adicionarAoCarrinho('Candy Baby - 1011 Amarelinho', 19.90)">Adicionar ao carrinho</button>
+        </article>
+
+        <article class="produto" data-estoque="5">
+          <img src="imagens/candy-baby.jpg.png" alt="Candy Baby 402 Peach">
+          <h3>402 - Peach</h3>
+          <p class="preco">R$ 19,90</p>
+          <p class="estoque"></p>
+          <button onclick="adicionarAoCarrinho('Candy Baby - 402 Peach', 19.90)">Adicionar ao carrinho</button>
+        </article>
+
+        <article class="produto" data-estoque="5">
+          <img src="imagens/candy-baby.jpg.png" alt="Candy Baby 7684 Porcelana">
+          <h3>7684 - Porcelana</h3>
+          <p class="preco">R$ 19,90</p>
+          <p class="estoque"></p>
+          <button onclick="adicionarAoCarrinho('Candy Baby - 7684 Porcelana', 19.90)">Adicionar ao carrinho</button>
+        </article>
+
+        <article class="produto" data-estoque="5">
+          <img src="imagens/candy-baby.jpg.png" alt="Candy Baby 7712 Nude">
+          <h3>7712 - Nude</h3>
+          <p class="preco">R$ 19,90</p>
+          <p class="estoque"></p>
+          <button onclick="adicionarAoCarrinho('Candy Baby - 7712 Nude', 19.90)">Adicionar ao carrinho</button>
+        </article>
+
+        <article class="produto" data-estoque="5">
+          <img src="imagens/candy-baby.jpg.png" alt="Candy Baby 142 Pimenta">
+          <h3>142 - Pimenta</h3>
+          <p class="preco">R$ 19,90</p>
+          <p class="estoque"></p>
+          <button onclick="adicionarAoCarrinho('Candy Baby - 142 Pimenta', 19.90)">Adicionar ao carrinho</button>
+        </article>
+
+        <article class="produto" data-estoque="5">
+          <img src="imagens/candy-baby.jpg.png" alt="Candy Baby 769 Chiclete">
+          <h3>769 - Chiclete</h3>
+          <p class="preco">R$ 19,90</p>
+          <p class="estoque"></p>
+          <button onclick="adicionarAoCarrinho('Candy Baby - 769 Chiclete', 19.90)">Adicionar ao carrinho</button>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer></footer>
+
+  <a href="https://wa.me/5548999016147?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20produtos." target="_blank" class="botao-whatsapp" aria-label="Fale conosco no WhatsApp">
+    <svg viewBox="0 0 24 24" width="28" height="28" fill="white">
+      <path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.38 5.08L2 22l5.05-1.33C8.5 21.5 10.2 22 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm5.2 14.2c-.22.62-1.28 1.16-1.76 1.2-.45.05-1 .07-1.6-.1-.37-.1-.84-.27-1.44-.53-2.54-1.1-4.2-3.66-4.33-3.83-.13-.17-1.04-1.38-1.04-2.63s.66-1.87.9-2.13c.23-.25.5-.32.67-.32.17 0 .33 0 .48.01.15.01.36-.06.56.43.22.53.75 1.83.82 1.96.06.13.1.29.02.46-.08.17-.13.28-.25.43-.13.15-.27.34-.38.46-.13.13-.26.27-.11.53.15.27.68 1.12 1.46 1.82 1 .9 1.85 1.18 2.11 1.31.27.13.42.11.58-.07.16-.18.68-.79.86-1.06.18-.27.36-.22.6-.13.25.09 1.56.74 1.83.87.27.13.45.2.51.31.07.12.07.68-.15 1.3z"/>
+    </svg>
+  </a>
+
+  <script src="carrinho.js"></script>
+</body>
+</html>
