@@ -26,9 +26,11 @@ nav a {
 
 .lista-produtos {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 20px;
-  padding: 0 20px;
+  padding: 0 20px 16px 20px;
+  overflow-x: auto;
+  scroll-snap-type: x proximity;
 }
 
 .produto {
@@ -37,6 +39,8 @@ nav a {
   padding: 16px;
   margin-bottom: 16px;
   max-width: 300px;
+    flex: 0 0 260px;
+  scroll-snap-align: start;
 }
 
 .produto img {
