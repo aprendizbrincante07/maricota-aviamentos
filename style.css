@@ -182,3 +182,30 @@ button:disabled {
   flex: 1;
   margin: 0 12px;
 }
+
+.produto-detalhe {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding: 20px;
+}
+
+.galeria img {
+  width: 100%;
+  max-width: 320px;
+  border-radius: 8px;
+}
+
+.info-produto {
+  flex: 1 1 280px;
+}
+
+.especificacoes {
+  color: #666666;
+  margin: 4px 0;
+}
+
+.descricao {
+  line-height: 1.5;
+  max-width: 520px;
+}

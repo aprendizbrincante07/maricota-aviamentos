@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crush - Maricota Aviamentos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Maricota Aviamentos</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html#sobre">Sobre</a></li>
+        <li><a href="index.html#produtos">Produtos</a></li>
+        <li><a href="index.html#contato">Contato</a></li>
+        <li><a href="carrinho.html">Carrinho (<span id="contador-carrinho">0</span>)</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="produto-detalhe">
+      <div class="galeria">
+        <img src="imagens/crush.jpg.png" alt="Crush">
+      </div>
+
+      <div class="info-produto">
+        <h2>Crush</h2>
+        <p class="especificacoes">Círculo | 150g | 300m</p>
+        <p class="preco">R$ 37,90</p>
+        <p class="descricao">Um fio 100% poliamida que transforma as tendências da moda em textura. Seus pelos curtos e toque macio criam um efeito moderno para peças de crochê e tricô. Com 12 cores na cartela, oferece mais possibilidades criativas e um visual atual e diferenciado para cada produção. Ideal para quem busca unir estilo e aconchego em projetos únicos.</p>
+      </div>
+    </section>
+
+    <section class="categoria-produtos">
+      <h3>Cores disponíveis</h3>
+      <div class="lista-produtos">
+
+        <article class="produto" data-estoque="5">
+          <img src="imagens/crush.jpg.png" alt="Crush 8001 Branco">
+          <h3>8001 - Branco</h3>
+          <p class="preco">R$ 37,90</p>
+          <p class="estoque"></p>
+          <button onclick="adicionarAoCarrinho('Crush - 8001 Branco', 37.90)">Adicionar ao carrinho</button>
+        </article>
+
+        <article class="produto" data-estoque="5">
+          <img src="imagens/crush.jpg.png" alt="Crush 7684 Porcelana">
+          <h3>7684 - Porcelana</h3>
+          <p class="preco">R$ 37,90</p>
+          <p class="estoque"></p>
+          <button onclick="adicionarAoCarrinho('Crush - 7684 Porcelana', 37.90)">Adicionar ao carrinho</button>
+        </article>
+
+        <article class="produto" data-estoque="5">
+          <img src="imagens/crush.jpg.png" alt="Crush 7767 Guepardo">
+          <h3>7767 - Guepardo</h3>
+          <p class="preco">R$ 37,90</p>
+          <p class="estoque"></p>
+          <button onclick="adicionarAoCarrinho('Crush - 7767 Guepardo', 37.90)">Adicionar ao carrinho</button>
+        </article>
+
+        <article class="produto" data-estoque="5">
+          <img src="imagens/crush.jpg.png" alt="Crush 7329 Castanha">
+          <h3>7329 - Castanha</h3>
+          <p class="preco">R$ 37,90</p>
+          <p class="estoque"></p>
+          <button onclick="adicionarAoCarrinho('Crush - 7329 Castanha', 37.90)">Adicionar ao carrinho</button>
+        </article>
+
+        <article class="produto" data-estoque="5">
+          <img src="imagens/crush.jpg.png" alt="Crush 7311 Tabaco">
+          <h3>7311 - Tabaco</h3>
+          <p class="preco">R$ 37,90</p>
+          <p class="estoque"></p>
+          <button onclick="adicionarAoCarrinho('Crush - 7311 Tabaco', 37.90)">Adicionar ao carrinho</button>
+        </article>
+
+        <article class="produto" data-estoque="5">
+          <img src="imagens/crush.jpg.png" alt="Crush 3219 Mimosa">
+          <h3>3219 - Mimosa</h3>
+          <p class="preco">R$ 37,90</p>
+          <p class="estoque"></p>
+          <button onclick="adicionarAoCarrinho('Crush - 3219 Mimosa', 37.90)">Adicionar ao carrinho</button>
+        </article>
+
+        <article class="produto" data-estoque="5">
+          <img src="imagens/crush.jpg.png" alt="Crush 2927 Aquário">
+          <h3>2927 - Aquário</h3>
+          <p class="preco">R$ 37,90</p>
+          <p class="estoque"></p>
+          <button onclick="adicionarAoCarrinho('Crush - 2927 Aquário', 37.90)">Adicionar ao carrinho</button>
+        </article>
+
+        <article class="produto" data-estoque="5">
+          <img src="imagens/crush.jpg.png" alt="Crush 2935 Giz de Cera">
+          <h3>2935 - Giz de Cera</h3>
+          <p class="preco">R$ 37,90</p>
+          <p class="estoque"></p>
+          <button onclick="adicionarAoCarrinho('Crush - 2935 Giz de Cera', 37.90)">Adicionar ao carrinho</button>
+        </article>
+
+        <article class="produto" data-estoque="5">
+          <img src="imagens/crush.jpg.png" alt="Crush 5845 Ébano">
+          <h3>5845 - Ébano</h3>
+          <p class="preco">R$ 37,90</p>
+          <p class="estoque"></p>
+          <button onclick="adicionarAoCarrinho('Crush - 5845 Ébano', 37.90)">Adicionar ao carrinho</button>
+        </article>
+
+        <article class="produto" data-estoque="5">
+          <img src="imagens/crush.jpg.png" alt="Crush 5026 Crepom">
+          <h3>5026 - Crepom</h3>
+          <p class="preco">R$ 37,90</p>
+          <p class="estoque"></p>
+          <button onclick="adicionarAoCarrinho('Crush - 5026 Crepom', 37.90)">Adicionar ao carrinho</button>
+        </article>
+
+        <article class="produto" data-estoque="5">
+          <img src="imagens/crush.jpg.png" alt="Crush 8212 Cromado">
+          <h3>8212 - Cromado</h3>
+          <p class="preco">R$ 37,90</p>
+          <p class="estoque"></p>
+          <button onclick="adicionarAoCarrinho('Crush - 8212 Cromado', 37.90)">Adicionar ao carrinho</button>
+        </article>
+
+        <article class="produto" data-estoque="5">
+          <img src="imagens/crush.jpg.png" alt="Crush 8990 Preto">
+          <h3>8990 - Preto</h3>
+          <p class="preco">R$ 37,90</p>
+          <p class="estoque"></p>
+          <button onclick="adicionarAoCarrinho('Crush - 8990 Preto', 37.90)">Adicionar ao carrinho</button>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer></footer>
+
+  <a href="https://wa.me/5548999016147?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20produtos." target="_blank" class="botao-whatsapp" aria-label="Fale conosco no WhatsApp">
+    <svg viewBox="0 0 24 24" width="28" height="28" fill="white">
+      <path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.38 5.08L2 22l5.05-1.33C8.5 21.5 10.2 22 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm5.2 14.2c-.22.62-1.28 1.16-1.76 1.2-.45.05-1 .07-1.6-.1-.37-.1-.84-.27-1.44-.53-2.54-1.1-4.2-3.66-4.33-3.83-.13-.17-1.04-1.38-1.04-2.63s.66-1.87.9-2.13c.23-.25.5-.32.67-.32.17 0 .33 0 .48.01.15.01.36-.06.56.43.22.53.75 1.83.82 1.96.06.13.1.29.02.46-.08.17-.13.28-.25.43-.13.15-.27.34-.38.46-.13.13-.26.27-.11.53.15.27.68 1.12 1.46 1.82 1 .9 1.85 1.18 2.11 1.31.27.13.42.11.58-.07.16-.18.68-.79.86-1.06.18-.27.36-.22.6-.13.25.09 1.56.74 1.83.87.27.13.45.2.51.31.07.12.07.68-.15 1.3z"/>
+    </svg>
+  </a>
+
+  <script src="carrinho.js"></script>
+</body>
+</html>
